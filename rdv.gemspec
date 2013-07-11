@@ -10,10 +10,14 @@ Gem::Specification.new do |s|
   s.authors     = ["Valentin Ballestrino"]
   s.email       = ["vala@glyph.fr"]
   s.homepage    = "http://www.glyph.fr"
-  s.summary     = "Small DSL to write things down"
-  s.description = "Small DSL to write things down"
+  s.summary     = "Small DSL to write issues in plain text"
+  s.description = "rdv converts plain text markup into github issues and post them to the desired repository"
+  s.license     = "MIT"
 
-  s.files = Dir["{app,config,db,lib}/**/*"] + ["MIT-LICENSE", "Rakefile", "README.md"]
+  s.files = Dir["{bin,lib}/**/*"] + ["MIT-LICENSE", "Rakefile", "README.md"]
+  s.bindir = "bin"
+  s.executables << "rdv"
+
 
   s.add_dependency "thor"
   s.add_dependency "octokit"

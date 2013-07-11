@@ -1,9 +1,18 @@
-Dev
+Furthermore
   -> Check to see if parser works @vala
+    # Try to do that thing
     - Use the associated rake task
-    - It will read that file
+
+    ## The best we can
+    - It will read that file :
+    <a href="http://github.com">Some plain HTML link</a>
+
+    ```ruby
+    puts "Code can be embeded too"
+    ```
+
     - And try to extract structure
-    tags | examples | at | the | end
+    | tags | examples | at | the | end
 
 Other
   -> Drop it @vala

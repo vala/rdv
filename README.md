@@ -29,19 +29,20 @@ Newsletter :
     * etc.
   - Other issue with labels
     Do something not being in a list ...
+
     blah...
-    tags | at | the | end
+    | tags | at | the | end
 
 Other Theme :
   -> Issue with a preceding arrow
     Issue content, can be anything ...
-    tag it | here
+    | tag it | here
 ```
 
 What matters :
 * Structure depends on indentation, so Theme / Issue / Content should be respected
 * Collaborator assignment should be at the end of the issue title
-* Labels should be at the end of the issue content, separated by pipes (|)
+* Labels list should be at the end of the issue content, beginning with a pipe (|) and each label separated by a pipe too
 
 What is optional :
 * Collaborator assignment is optional

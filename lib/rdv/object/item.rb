@@ -19,17 +19,17 @@ module Rdv
         # Fetch contents
         contents = @raw_content.reduce([]) do |list, line|
           line = trim_indentation(line)
-          list << line unless line.match(/^\s+$/)
+          list << line
           list
-        end.compact
+        end.join("").strip.lines
 
-        if contents.last.scan(/\|/).length > 0
-          @tags = contents.pop.split("|").map do |tag|
+        if contents.last.match(/^\|/)
+          @tags = contents.pop.split("|")[1..-1].map do |tag|
             capitalize(tag)
-          end
+          end.compact
         end
 
-        @content = contents.join("")
+        @content = contents.join
 
         # If a @user tag is found in the issue name, strip it and store it as
         # the assignee user login

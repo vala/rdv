@@ -4,5 +4,10 @@ $:.push File.expand_path("../../lib", __FILE__)
 
 require "rdv"
 
-Rdv::CLI.start(ARGV)
+begin
+  Rdv::CLI.start(ARGV)
+rescue Interrupt => e
+  puts "\nAborted !".red
+  exit 1
+end
 
