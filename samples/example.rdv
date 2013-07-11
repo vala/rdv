@@ -1,0 +1,13 @@
+Dev
+  -> Check to see if parser works @vala
+    - Use the associated rake task
+    - It will read that file
+    - And try to extract structure
+    tags | examples | at | the | end
+
+Other
+  -> Drop it @vala
+    - Like it's hot
+  -> But @vala
+    - Never
+    - Let it fall
