@@ -1,3 +1,3 @@
-= Rdv
+# Rdv
 
-This project rocks and uses MIT-LICENSE.
+Write plain text and export to Github issues without too much overhead
